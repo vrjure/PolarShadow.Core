@@ -11,7 +11,7 @@ namespace PolarShadow.Core
         private JsonStringSource _source;
         public JsonStringProvider(JsonStringSource source) : base(source)
         {
-            if (_source == null) throw new ArgumentNullException(nameof(source));
+            if (source == null) throw new ArgumentNullException(nameof(source));
             _source = source;
         }
 
